@@ -1,4 +1,4 @@
-package com.lokaur.materialsearchview;
+package com.lokaur.samplesearchview;
 
 import android.os.Bundle;
 
