@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/msv_searchRL"
+    android:layout_width="match_parent"
+    android:layout_height="?android:actionBarSize"
+    android:background="@color/msvWhite"
+    android:visibility="gone">
+
+    <ImageButton
+        android:id="@+id/msv_backBT"
+        style="@style/msvButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:paddingStart="@dimen/msvBackButtonHorizontalPadding"
+        android:paddingEnd="@dimen/msvBackButtonHorizontalPadding"
+        android:src="@drawable/msv_ic_arrow_back"/>
+
+    <EditText
+        android:id="@+id/msv_searchET"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/msv_clearBT"
+        android:layout_toLeftOf="@id/msv_clearBT"
+        android:layout_toEndOf="@id/msv_backBT"
+        android:layout_toRightOf="@id/msv_backBT"
+        android:background="@android:color/transparent"
+        android:hint="@string/msvSearch_hint"
+        android:imeOptions="actionSearch"
+        android:inputType="textNoSuggestions"
+        android:paddingStart="@dimen/msvBackButtonHorizontalPadding"
+        android:paddingEnd="@dimen/msvBackButtonHorizontalPadding"
+        android:textColor="@color/msvGrey_900"
+        android:textColorHint="@color/msvGrey_600"
+        android:textSize="@dimen/msvSearchTextSize"/>
+
+    <ImageButton
+        android:id="@+id/msv_clearBT"
+        style="@style/msvButton"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:paddingStart="@dimen/msvBackButtonHorizontalPadding"
+        android:paddingEnd="@dimen/msvBackButtonHorizontalPadding"
+        android:src="@drawable/msv_ic_clear"/>
+
+</RelativeLayout>

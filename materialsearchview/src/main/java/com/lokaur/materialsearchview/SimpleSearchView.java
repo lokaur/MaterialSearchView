@@ -1,5 +1,6 @@
 package com.lokaur.materialsearchview;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.text.Editable;
@@ -58,11 +59,11 @@ public class SimpleSearchView extends RelativeLayout {
     }
 
     private void initLayout() {
-        LayoutInflater.from(getContext()).inflate(R.layout.simple_search_view, this, true);
-        mSearchET = findViewById(R.id.searchET);
-        mSearchRL = findViewById(R.id.searchRL);
+        LayoutInflater.from(getContext()).inflate(R.layout.msv_simple_search_view, this, true);
+        mSearchET = findViewById(R.id.msv_searchET);
+        mSearchRL = findViewById(R.id.msv_searchRL);
 
-        ImageButton backIB = findViewById(R.id.backBT);
+        ImageButton backIB = findViewById(R.id.msv_backBT);
         backIB.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,7 +71,7 @@ public class SimpleSearchView extends RelativeLayout {
             }
         });
 
-        ImageButton clearIB = findViewById(R.id.clearBT);
+        ImageButton clearIB = findViewById(R.id.msv_clearBT);
         clearIB.setOnClickListener(new OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -111,14 +112,14 @@ public class SimpleSearchView extends RelativeLayout {
     }
 
     private void init(AttributeSet attrs, int defStyleAttr) {
-        TypedArray typedArray = getContext().obtainStyledAttributes(attrs,
-                R.styleable.SimpleSearchView, defStyleAttr, 0);
+        @SuppressLint("CustomViewStyleable") TypedArray typedArray = getContext()
+                .obtainStyledAttributes(attrs, R.styleable.msvSimpleSearchView, defStyleAttr, 0);
         if (typedArray != null) {
-            if (typedArray.hasValue(R.styleable.SimpleSearchView_msvHint))
-                mSearchET.setHint(typedArray.getString(R.styleable.SimpleSearchView_msvHint));
+            if (typedArray.hasValue(R.styleable.msvSimpleSearchView_msvHint))
+                mSearchET.setHint(typedArray.getString(R.styleable.msvSimpleSearchView_msvHint));
 
-            if (typedArray.hasValue(R.styleable.SimpleSearchView_msvText))
-                mSearchET.setText(typedArray.getString(R.styleable.SimpleSearchView_msvText));
+            if (typedArray.hasValue(R.styleable.msvSimpleSearchView_msvText))
+                mSearchET.setText(typedArray.getString(R.styleable.msvSimpleSearchView_msvText));
 
             typedArray.recycle();
         }

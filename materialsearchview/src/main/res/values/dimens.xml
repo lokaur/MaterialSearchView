@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="searchTextSize">16sp</dimen>
-    <dimen name="backButtonHorizontalPadding">16dp</dimen>
+    <dimen name="msvSearchTextSize">16sp</dimen>
+    <dimen name="msvBackButtonHorizontalPadding">16dp</dimen>
 </resources>
