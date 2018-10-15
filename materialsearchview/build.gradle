@@ -19,7 +19,7 @@ android {
         minSdkVersion 16
         targetSdkVersion 28
         versionCode 1
-        versionName "0.3-alpha"
+        versionName "0.3.2-alpha"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -53,7 +53,7 @@ ext {
     siteUrl = 'https://github.com/lokaur/MaterialSearchView'
     gitUrl = 'https://github.com/lokaur/MaterialSearchView.git'
 
-    libraryVersion = '0.3.1-alpha'
+    libraryVersion = '0.3.2-alpha'
 
     developerId = 'lokaur'
     developerName = 'Andrey Martynov'

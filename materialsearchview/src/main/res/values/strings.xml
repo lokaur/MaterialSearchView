@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MaterialSearchView</string>
     <string name="search_hint">Search…</string>
+    <public/>
 </resources>
