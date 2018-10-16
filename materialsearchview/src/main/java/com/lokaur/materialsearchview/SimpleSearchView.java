@@ -76,6 +76,8 @@ public class SimpleSearchView extends RelativeLayout {
             @Override
             public void onClick(View v) {
                 mSearchET.setText("");
+                if (mOnSearchListener != null)
+                    mOnSearchListener.onSearchQueryCleared();
             }
         });
 

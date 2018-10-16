@@ -5,6 +5,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.lokaur.materialsearchview.SearchViewAdapter;
 import com.lokaur.materialsearchview.SimpleSearchView;
 
 import androidx.appcompat.app.AppCompatActivity;

@@ -8,4 +8,6 @@ public interface OnSearchListener {
     void onSearchQuerySubmit(String searchQuery);
 
     void onSearchQueryChange(String searchQuery);
+
+    void onSearchQueryCleared();
 }
