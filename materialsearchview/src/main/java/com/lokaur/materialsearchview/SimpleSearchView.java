@@ -204,4 +204,11 @@ public class SimpleSearchView extends RelativeLayout {
         });
         mSearchRL.startAnimation(fadeOut);
     }
+
+    public String getSearchQuery() {
+        if (mSearchET != null)
+            return mSearchET.getText().toString();
+
+        return "";
+    }
 }
