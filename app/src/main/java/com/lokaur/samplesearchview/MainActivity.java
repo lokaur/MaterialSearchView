@@ -5,15 +5,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Toast;
 
+import com.lokaur.materialsearchview.MaterialSearchView;
 import com.lokaur.materialsearchview.SearchViewAdapter;
-import com.lokaur.materialsearchview.SimpleSearchView;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 public class MainActivity extends AppCompatActivity {
 
-    private SimpleSearchView mSimpleSearchView;
+    private MaterialSearchView mSimpleSearchView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
